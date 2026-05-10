@@ -8,10 +8,6 @@ import buttonsbg from "../assets/c.jpg";
 import clothbg from "../assets/d.jpg";
 import suitebg from "../assets/e.jpg";
 
-import chestgif from '../assets/chest.gif'
-import waistgif from '../assets/waist.gif'
-import sleeve from '../assets/sleeve.jpg'
-import shoulder from '../assets/shoulder.jpg'
 
 /* Lottie Animations */
 import athleticAnim from "../assets/lottie/athletic.json";
@@ -22,7 +18,7 @@ import heavyAnim from "../assets/lottie/heavy.json";
 export default function SuitCustomizer() {
     const navigate = useNavigate();
     const [step, setStep] = useState(1);
-    const [measurementStep, setMeasurementStep] = useState(0);
+    
 
     
     const stepBackgrounds = {
@@ -74,21 +70,7 @@ export default function SuitCustomizer() {
 
     /* BODY ANIMATION LOGIC */
 
-    const getBodyAnimation = () => {
-
-        const weight = Number(formData.weight);
-        const height = Number(formData.height);
-
-        if (formData.bodyType === "Athletic") {
-            return athleticAnim;
-        }
-
-        if (formData.bodyType === "Heavy") {
-            return heavyAnim;
-        }
-
-        return regularAnim;
-    };
+    
 
     /* RECOMMENDED SIZE */
 

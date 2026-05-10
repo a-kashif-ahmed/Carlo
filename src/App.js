@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import WelcomeScreen from './Pages/WelcomeScreen';
-import bg from "./assets/wew.jpg"
+
 import SuitCustomizer from './Components/SuiteCustomizer';
 import MeasurementGuide from './Pages/Measurement';
 import Checkout from './Pages/Checkout';
